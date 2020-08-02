@@ -6,6 +6,23 @@
 body{
     font-family: 'Lato',sans-serif;
 }
-.land-page{
+.landing-page{
     background-image: url(../images/pexels-andy-kuzma-2918521.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}  
+.header{
+color: white;
+background-color: rgba(0,0,0,0.7);
+border-radius: 5px;
+}
+.header> h1,p{
+    padding: 1.8rem;
 }
