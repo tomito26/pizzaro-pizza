@@ -26,3 +26,6 @@ border-radius: 5px;
 .header> h1,p{
     padding: 1.8rem;
 }
+#about {
+    text-align: center;
+}
