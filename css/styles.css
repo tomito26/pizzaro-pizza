@@ -30,7 +30,7 @@ border-radius: 5px;
     text-align: center;
 }
 .container{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/pexels-andy-kuzma-2918521.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(../images/pexels-andy-kuzma-2918521.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
