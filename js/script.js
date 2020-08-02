@@ -11,40 +11,40 @@ $(document).ready(function(){
         })
         console.log(pizzaTopping.join(','));
         if (pizzasize === 'small'){
-          price = 600
-          console.log('The size costs ' + price)
+          smallPrice = 600
+          console.log('The size costs ' + smallPrice)
 
         }
         else if (pizzasize === 'medium'){
-            price = 800
-            console.log('The size costs ' + price)
+            mediumPrice = 800
+            console.log('The size costs ' + mediumPrice)
 
         }
         else if(pizzasize === 'large'){
-            price = 1000
-            console.log('The size costs ' + price)
+            largePrice = 1000
+            console.log('The size costs ' + largePrice)
 
         }
         else{
-            alert ('Ensure you fill your inputs before submission')
+            alert ('Ensure you make your full order before submission')
         }
         if (pizzaCrust === 'crispy'){
-            price = 250
-            alert('The size costs ' + price)
+            crispyPrice = 250
+            alert('The crust costs ' + crispyPrice)
 
         }
         else if(pizzaCrust ==='stuffed'){
-            price = 300
-            alert('The size costs ' + price)
+            stuffedPrice= 300
+            alert('The crust costs ' + stuffedPrice)
 
         }
         else if(pizzaCrust === 'glutten-free'){
-            price = 200
-            alert('The size costs ' + price)
+            gluttenPrice = 200
+            alert('The crust costs ' + gluttenPrice)
 
         }
         else{
-            alert('Ensure you fill your inputs before submission')
+            alert('Ensure you make your full order before submission')
 
         }
            
