@@ -2,7 +2,7 @@
 $(document).ready(function(){
     $("form#pizza").submit(function(){
         event.preventDefault();
-        let pizzasize = parseInt($("input:radio[name=pizzasize]:checked").val());
+        let pizzasize = parseInt($("#size").val());
         // alert(pizzasize)
         let pizzaCrust = parseInt($('#crust').val());
         // console.log(pizzaCrust)

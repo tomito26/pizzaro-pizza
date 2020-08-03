@@ -21,30 +21,33 @@
     <section id="about">
         <h2>About</h2>
         <p>Pizzaro is a restraurant known for delicious pizza that makes you lick your fingers and order for more.<br>We  also offers other meals prepared with skill that will make you look for your grandmother's recipe.<br>It is a restraurant where  you can spend time with your family and friends and also celebrate</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="images/cheesepizza.jpeg" alt="">
+                    <p>Cheese Burger pizza</p>
+                </div>
+                <div class="col-md-4">
+                    <img class='img-fluid' src="images/meat-deluxe.png" alt="">
+                    <p>Meat Deluxe pizza</p>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-fluid" src="images/pizza1.jpeg" alt="">
+                    <p>Chicken hawaiian</p>
+                </div>
+            </div>
+        </div>
     </section>
     <section>
         <div id="container" class="container text-white d-flex justify-content-center"> 
             <form id="pizza" class="">
-                <div class="pizzasize">
-                    <h2>Pizza Size</h2>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="pizzasize" id="pizzasize" value="600">
-                        <label class="form-check-label" for="exampleRadios1">
-                            Small -Ksh 600/-
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="pizzasize" id="pizzasize" value="800">
-                        <label class="form-check-label" for="exampleRadios2">
-                        Medium -Ksh800/-
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="pizzasize" id="pizzasize" value="1000" >
-                        <label class="form-check-label" for="exampleRadios3">
-                        Large -Ksh 1000/-
-                        </label>
-                    </div><br>
+                <div class="pizzasize pt-3">
+                    <select class="form-control w-100" id="size">
+                        <option selected>Open this select pizza size</option>
+                        <option value="600">Small-Ksh 250/-</option>
+                        <option value="800">Medium-ksh 300/-</option>
+                        <option value="1000">Large-ksh 200/-</option>
+                    </select><br>
                 </div>
                 <div class="crust">
                     <select class="form-control w-100" id="crust">
