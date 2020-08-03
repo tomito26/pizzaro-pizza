@@ -28,11 +28,11 @@ $(document).ready(function(){
         
         if(quantity > 0 && delivery =='Yes'){
             prompt("Enter your location for Delivery")
-            alert("Your total price is "  + quantity*(totalPrice.add()) + " and additional delivery charge of 250")
+            alert("Your total price is "  + 'Ksh '+ quantity*(totalPrice.add()) + " and additional delivery cost of Ksh 250")
             alert("Your Pizza will be delivered shortly")
         }
         else if (quantity> 0 && delivery == 'no') {
-            alert("Your total cost is " + quantity*(totalPrice.add()))
+            alert("Your total cost is " + 'Ksh '+ quantity*(totalPrice.add()))
         }
         
         else{
