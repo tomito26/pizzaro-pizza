@@ -5,13 +5,14 @@ $(document).ready(function(){
         let pizzasize = parseInt($("input:radio[name=pizzasize]:checked").val());
         // alert(pizzasize)
         let pizzaCrust = parseInt($('#crust').val());
-        //  alert(pizzaCrust)
-        let pizzaTopping = parseInt($("input:radio[name=topping]:checked").val());
-        // alert(pizzaTopping)
+        // console.log(pizzaCrust)
+        let pizzaTopping = parseInt($("#topping").val());
+        //  alert(pizzaTopping)
         // alert(totalPrice.add())
-        let quantity = $("input#quantity").val()
+        let quantity = parseInt($("input#quantity").val());
         // alert(quantity)
-        let 
+        let delivery = $("#delivery").val()
+        //  alert(delivery)
     
         
     //   business logic
@@ -24,11 +25,18 @@ $(document).ready(function(){
         Price.prototype.add = function(){
             return this.pizzaTopping + this.pizzasize + this.pizzaCrust
         }
-        if(quantity > 0){
-         alert("Your total price is "  + quantity*(totalPrice.add()))
+        
+        if(quantity > 0 && delivery =='Yes'){
+            prompt("Enter your location for Delivery")
+            alert("Your total price is "  + quantity*(totalPrice.add()) + " and additional delivery charge of 250")
+            alert("Your Pizza will be delivered shortly")
         }
-        else {
-            alert("Ensure you enter the quantity before submission")
+        else if (quantity> 0 && delivery == 'no') {
+            alert("Your total cost is " + quantity*(totalPrice.add()))
+        }
+        
+        else{
+            alert("Ensure you enter the correct submission")
         }
         
         }); 

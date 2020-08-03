@@ -23,7 +23,7 @@
     </section>
     <section>
         <div class="container text-white d-flex justify-content-center"> 
-            <form id="pizza" class="pt-3">
+            <form id="pizza" class="">
                 <div class="pizzasize">
                     <h2>Pizza Size</h2>
                     <div class="form-check">
@@ -56,61 +56,30 @@
                 </div>
                 <div class="toppings">
                     <h2>Pizza Toppings</h2>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" value="50" name="topping" id="topping">
-                        <label class="form-check-label" for="defaultCheck1">
-                        Pepperoni Ksh -50
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" value="50"  name="topping" id="topping" >
-                        <label class="form-check-label" for="defaultCheck2">
-                            Mushrooms- Ksh50
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" value="100" name="topping" id="topping" >
-                        <label class="form-check-label" for="defaultCheck2">
-                            Sausage - Ksh100
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" value="150"  name="topping" id="topping" >
-                        <label class="form-check-label" for="defaultCheck2">
-                            Bacon -Ksh150
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" value="100" name="topping" id="topping" >
-                        <label class="form-check-label" for="defaultCheck2">
-                            Extra cheese -Ksh100
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" value="50" name="topping" id="topping" >
-                        <label class="form-check-label" for="defaultCheck2">
-                            Green peppers - Ksh 50
-                        </label>
-                    </div>
-                </div>
-                <div class="quantity">
-                    <div class="form-check">
-                        <label class="form-check-label" for="quantity">
-                            Quantity<br>
-                            <input class="form-check-input" type="number" name="quantity" id="quantity">
-                        </label><br>
-                    </div><br><br>
-                </div>
+                    <select   class="form-control w-100" id="topping">
+                        <option value="50">Pepperoni - Ksh 50</option>
+                        <option value="">Mushroom -Ksh 50</option>
+                        <option value="50">Onions -Ksh 50</option>
+                        <option value="100">Sausage - Ksh 100</option>
+                        <option value="150">Bacon -Ksh 150</option>
+                        <option value="100">Extra cheese -Ksh 100</option>
+                        <option value="50">Green pepper -Ksh50</option>
+                    </select>
+                </div><br>
+                <div class="form-check">
+                    <h2>Quantity</h2>
+                    <input class="form-check-input" type="number" name="quantity" id="quantity" value="quantity" >
+                </div><br><br>
                 <div class="location">
                     <h2>Would you like it delivered</h2>
-                    <select class="form-control w-100" id="delivery">
+                    <select class="form-control" id="delivery">
                         <option selected>Open this select menu</option>
                         <option value="Yes">Yes</option>
                         <option value="no">No</option>
-                        
                     </select>
                 </div>
                 <button class="btn bg-dark text-white">Place Order</button>
+            
             </form>
 
         </div>
