@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
@@ -22,7 +23,7 @@
         <p>Pizzaro is a restraurant known for delicious pizza that makes you lick your fingers and order for more.<br>We  also offers other meals prepared with skill that will make you look for your grandmother's recipe.<br>It is a restraurant where  you can spend time with your family and friends and also celebrate</p>
     </section>
     <section>
-        <div class="container text-white d-flex justify-content-center"> 
+        <div id="container" class="container text-white d-flex justify-content-center"> 
             <form id="pizza" class="">
                 <div class="pizzasize">
                     <h2>Pizza Size</h2>
@@ -46,17 +47,16 @@
                     </div><br>
                 </div>
                 <div class="crust">
-                    <h2>Types of Crust</h2>
                     <select class="form-control w-100" id="crust">
-                        <option selected>Open this select menu</option>
+                        <option selected>Open this select pizza crust</option>
                         <option value="250">Crispy -Ksh 250/-</option>
                         <option value="300">Stuffed -ksh 300/-</option>
                         <option value="200">Glutten-free -ksh 200/-</option>
                     </select><br>
                 </div>
                 <div class="toppings">
-                    <h2>Pizza Toppings</h2>
                     <select   class="form-control w-100" id="topping">
+                        <option value="">choose Pizza Topping</option>
                         <option value="50">Pepperoni - Ksh 50</option>
                         <option value="">Mushroom -Ksh 50</option>
                         <option value="50">Onions -Ksh 50</option>
@@ -67,8 +67,7 @@
                     </select>
                 </div><br>
                 <div class="form-check">
-                    <h2>Quantity</h2>
-                    <input class="form-check-input" type="number" name="quantity" id="quantity" value="quantity" >
+                    <input class="form-check-input" type="number" name="quantity" id="quantity" value="quantity" placeholder="quantinty" >
                 </div><br><br>
                 <div class="location">
                     <h2>Would you like it delivered</h2>
@@ -84,7 +83,30 @@
 
         </div>
     </section>
-    <section id="footer">
+    <section id="footer" class="bg-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>location<br>Westlands,victoria plaza<br>lower kabete road<br>P.O Box 23056 00100</p>
+                    <i class="fas fa-envelope-square">info@pizzaro-pizza.com</i>
+                    <i class="fas fa-phone-alt">079625673</i>
+                </div>
+                <div class="col-md-4 pt-3">
+                    <ul>
+                        <li>About</li>
+                        <li>Newsletter</li>
+                        <li>Job offers</li>
+                        <li>Opening a new branch</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 pt-5">
+                    <i class="fab fa-facebook-f fa-2x"></i>
+                    <i class="fab fa-instagram-square fa-2x"></i>
+                    <i class="fab fa-twitter fa-2x"></i>
+                    <i class="fab fa-linkedin-in fa-2x"></i>
+                </div>
+            </div>
+        </div>
         
     </section>
     <script src="js/jquery-3.5.1.min.js"></script>
