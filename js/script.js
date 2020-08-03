@@ -1,54 +1,46 @@
+// user interface
 $(document).ready(function(){
     $("form#pizza").submit(function(){
         event.preventDefault();
-        let pizzasize = $("input:radio[name=pizzasize]:checked").val();
+        let pizzasize = parseInt($("input:radio[name=pizzasize]:checked").val());
         // alert(pizzasize)
-        let pizzaCrust = $('#crust').val();
-        // alert(pizzaCrust)
-        let pizzaTopping = [];
-        $.each($("input[name=topping]:checked"),function(){
-            pizzaTopping.push($(this).val());
-        })
-        console.log(pizzaTopping.join(','));
-        if (pizzasize === 'small'){
-          smallPrice = 600
-          console.log('The size costs ' + smallPrice)
-
+        let pizzaCrust = parseInt($('#crust').val());
+        // console.log(pizzaCrust)
+        let pizzaTopping = parseInt($("#topping").val());
+        //  alert(pizzaTopping)
+        // alert(totalPrice.add())
+        let quantity = parseInt($("input#quantity").val());
+        // alert(quantity)
+        let delivery = $("#delivery").val()
+        //  alert(delivery)
+    
+        
+    //   business logic
+        function Price(pizzasize,pizzaCrust,pizzaTopping){
+            this.pizzasize = pizzasize
+            this.pizzaCrust = pizzaCrust
+            this.pizzaTopping = pizzaTopping
         }
-        else if (pizzasize === 'medium'){
-            mediumPrice = 800
-            console.log('The size costs ' + mediumPrice)
-
+        let totalPrice = new Price(pizzasize,pizzaCrust,pizzaTopping);
+        Price.prototype.add = function(){
+            return this.pizzaTopping + this.pizzasize + this.pizzaCrust
         }
-        else if(pizzasize === 'large'){
-            largePrice = 1000
-            console.log('The size costs ' + largePrice)
-
+        
+        if(quantity > 0 && delivery =='Yes'){
+            prompt("Enter your location for Delivery")
+            alert("Your total price is "  + quantity*(totalPrice.add()) + " and additional delivery charge of 250")
+            alert("Your Pizza will be delivered shortly")
         }
+        else if (quantity> 0 && delivery == 'no') {
+            alert("Your total cost is " + quantity*(totalPrice.add()))
+        }
+        
         else{
-            alert ('Ensure you make your full order before submission')
+            alert("Ensure you enter the correct submission")
         }
-        if (pizzaCrust === 'crispy'){
-            crispyPrice = 250
-            alert('The crust costs ' + crispyPrice)
+        
+        }); 
+    
 
-        }
-        else if(pizzaCrust ==='stuffed'){
-            stuffedPrice= 300
-            alert('The crust costs ' + stuffedPrice)
 
-        }
-        else if(pizzaCrust === 'glutten-free'){
-            gluttenPrice = 200
-            alert('The crust costs ' + gluttenPrice)
-
-        }
-        else{
-            alert('Ensure you make your full order before submission')
-
-        }
-           
-         
-
-    });
 });
