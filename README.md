@@ -1,5 +1,5 @@
 # Pizzaro
-This project is about  pizza business.The project mainly focused on its interactiveness and layout.
+This project is about  pizza business.The project mainly focused on the interactiveness of the webpage and layout.
 
 ![screenshot](screenshot.png)
 
