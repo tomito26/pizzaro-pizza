@@ -24,72 +24,92 @@
     <section>
         <div class="container text-white d-flex justify-content-center"> 
             <form id="pizza" class="pt-3">
-                <h2>Pizza Size</h2>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="pizzasize" id="pizzasize" value="600">
-                    <label class="form-check-label" for="exampleRadios1">
-                        Small -Ksh 600/-
-                    </label>
+                <div class="pizzasize">
+                    <h2>Pizza Size</h2>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="pizzasize" id="pizzasize" value="600">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Small -Ksh 600/-
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="pizzasize" id="pizzasize" value="800">
+                        <label class="form-check-label" for="exampleRadios2">
+                        Medium -Ksh800/-
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="pizzasize" id="pizzasize" value="1000" >
+                        <label class="form-check-label" for="exampleRadios3">
+                        Large -Ksh 1000/-
+                        </label>
+                    </div><br>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="pizzasize" id="pizzasize" value="800">
-                    <label class="form-check-label" for="exampleRadios2">
-                    Medium -Ksh800/-
-                    </label>
+                <div class="crust">
+                    <h2>Types of Crust</h2>
+                    <select class="form-control w-100" id="crust">
+                        <option selected>Open this select menu</option>
+                        <option value="250">Crispy -Ksh 250/-</option>
+                        <option value="300">Stuffed -ksh 300/-</option>
+                        <option value="200">Glutten-free -ksh 200/-</option>
+                    </select><br>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="pizzasize" id="pizzasize" value="1000" >
-                    <label class="form-check-label" for="exampleRadios3">
-                    Large -Ksh 1000/-
-                    </label>
-                </div><br>
-
-                <h2>Types of Crust</h2>
-                <select class="form-control w-100" id="crust">
-                    <option selected>Open this select menu</option>
-                    <option value="250">Crispy -Ksh 250/-</option>
-                    <option value="300">Stuffed -ksh 300/-</option>
-                    <option value="200">Glutten-free -ksh 200/-</option>
-                </select><br>
-
-                <h2>Pizza Toppings</h2>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" value="50" name="topping" id="topping">
-                    <label class="form-check-label" for="defaultCheck1">
-                    Pepperoni
-                    </label>
+                <div class="toppings">
+                    <h2>Pizza Toppings</h2>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" value="50" name="topping" id="topping">
+                        <label class="form-check-label" for="defaultCheck1">
+                        Pepperoni Ksh -50
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" value="50"  name="topping" id="topping" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Mushrooms- Ksh50
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" value="100" name="topping" id="topping" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Sausage - Ksh100
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" value="150"  name="topping" id="topping" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Bacon -Ksh150
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" value="100" name="topping" id="topping" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Extra cheese -Ksh100
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" value="50" name="topping" id="topping" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Green peppers - Ksh 50
+                        </label>
+                    </div>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" value="50"  name="topping" id="topping" >
-                    <label class="form-check-label" for="defaultCheck2">
-                        Mushrooms
-                    </label>
+                <div class="quantity">
+                    <div class="form-check">
+                        <label class="form-check-label" for="quantity">
+                            Quantity<br>
+                            <input class="form-check-input" type="number" name="quantity" id="quantity">
+                        </label><br>
+                    </div><br><br>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" value="100" name="topping" id="topping" >
-                    <label class="form-check-label" for="defaultCheck2">
-                        Sausage
-                    </label>
+                <div class="location">
+                    <h2>Would you like it delivered</h2>
+                    <select class="form-control w-100" id="delivery">
+                        <option selected>Open this select menu</option>
+                        <option value="Yes">Yes</option>
+                        <option value="no">No</option>
+                        
+                    </select>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" value="150"  name="topping" id="topping" >
-                    <label class="form-check-label" for="defaultCheck2">
-                        Bacon
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" value="100" name="topping" id="topping" >
-                    <label class="form-check-label" for="defaultCheck2">
-                        Extra cheese
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" value="50" name="topping" id="topping" >
-                    <label class="form-check-label" for="defaultCheck2">
-                        Green peppers
-                    </label>
-                </div>
-                
                 <button class="btn bg-dark text-white">Place Order</button>
             </form>
 
