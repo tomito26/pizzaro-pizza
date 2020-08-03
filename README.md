@@ -22,3 +22,17 @@ $ cd directory
  ```
 $ code . 
  ```
+
+## Contribution
+You can contribute  by forking the project  and cloning it into your local machine by following the above steps
+
+## Technologies Used
+* HTML
+* CSS
+* Boostrap
+* Javascript
+* Jquery
+## Contacts
+if you ran into any challenge  or have a question feel free to  email me tommybwah@gmail.com
+# License 
+License under [MIT license](license)
